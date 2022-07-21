@@ -32,3 +32,11 @@ SOLANA_PER_USD <--- 0.023
 EXCHANGE <--- USD * SOLANA_PER_USD  
 PRINT <--- EXCHANGE  
 End
+
+____________________________________________
+
+**WEDNESDAY**
+
+***1.Your date of birth in the matrix? exercise***  
+7    /5/   2003  
+111/101/11111010011
