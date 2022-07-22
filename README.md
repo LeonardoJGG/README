@@ -1,42 +1,15 @@
-# README
-MY PERSONAL README FOR CORE-CODE ACADEMY
-________________________________________
+# MY PERSONAL README FOR CORE-CODE ACADEMY
 
-***1.Interpreted And Compiled Programming Languages***
+Hi, my name is Leonardo Guevara, i'm 19 years old and i'm currently a software development student.  
 
-**•Compiled language**  
+![image text](https://uploads-ssl.webflow.com/622ecede02e90a7526aafe35/622ed25bed04e77d4988729b_corecode%20logo%20negative.svg)
 
-A compiled language is a programming language whose implementations are usually "translators" that create machine code from source code written by the developer.
+## About me
 
-**•Interpreted language**
+I am a Venezuelan who has been attracted by technology since I was very young, I also became a lover of video games and grew up very involved in that world, I also have a great passion for sports since I can remember, I have been **basketball** player for many years, I love speed sports, cars, motorcycles, I'm a big fan of **bodybuilding** and fitness culture.  
+I started in the world of programming at the age of 9, recreating youtube tutorials for fun and a year ago I was an intern for 3 months in a company as a **python** programmer  
 
-An interpreted language is a programming language in which instructions are mostly executed directly without first being compiled into machine language.
+I have many goals and dreams to fulfill, and I will not rest until I achieve it, with perseverance, effort and discipline.  
 
-**Personal comparison**
+***-*** *Luck exists only for those who work until they get it*
 
-In short, a compiled language when translated into machine language is more efficient for the user when executed, while an interpreted language is more optimized on the developer's side and is a little less efficient when executed since it means a slightly higher load for the machine.
-
-
-***2.Is Java compiled or interpreted, or both?***
-
-Java is a language that is compiled and interpreted at the same time, since the compiler converts the code into bytecode, and then the Ja Virtual Machine ends up interpreting that code.
-
-
-***3.Pseudocode Currency Converter exercise***
-
-Pseudocode FROM_USD_TO_SOLANA
-
-Start  
-USD <--- GET  
-SOLANA_PER_USD <--- 0.023  
-EXCHANGE <--- USD * SOLANA_PER_USD  
-PRINT <--- EXCHANGE  
-End
-
-____________________________________________
-
-**WEDNESDAY**
-
-***1.Your date of birth in the matrix? exercise***  
-7    /5/   2003  
-111/101/11111010011
