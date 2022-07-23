@@ -2,7 +2,7 @@
 
 Hi, my name is Leonardo Guevara, i'm 19 years old and i'm currently a software development student.  
 
-![image text](https://uploads-ssl.webflow.com/622ecede02e90a7526aafe35/622ed25bed04e77d4988729b_corecode%20logo%20negative.svg)
+![image text](https://uploads-ssl.webflow.com/5eb2f56932c3562feab232e3/5f73550d00249e7e96c9f3de_Logo.png 'corecodeio')
 
 ## About me
 
