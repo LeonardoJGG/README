@@ -42,9 +42,135 @@ End
 <summary> Wednesday </summary>  
 
 ***1.Your date of birth in the matrix? exercise***  
-7    /5/   2003  
-111/101/11111010011
- 
+
+I was born on May 7, **2003**  
+
+So convert the year of birth (2003) to binary numbers:
+
+|  2¹⁰ |  2⁹ |  2⁸ |  2⁷ | 2⁶ | 2⁵ | 2⁴ | 2³ | 2² | 2¹ | 2⁰ |
+|:----:|:---:|:---:|:---:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1024 | 512 | 256 | 128 | 64 | 32 | 16 |  8 |  4 |  2 |  1 |
+
+2003 - 1024 = 979, this is equal to 1
+
+979 - 512 = 467, this is worth 1
+
+467 - 256 = 211, this is equal to 1
+
+211 - 128 = 83, this is equal to 1
+
+83 - 64 = 19, this is equal to 1
+
+19 - 32 is not a possible operation, so it is 0
+
+19 - 16 = 3, this is worth 1
+
+3 - 8 is not a possible operation, so it is equal to 0
+
+3 - 4 is not a possible operation, so it is 0
+
+3 - 2 = 1, this is equal to 1
+
+1 - 1 = 0, this is equal to 1
+
+This process gives us as a result that my year of birth in binary numbers is: **11111010011**
+
+
+
+
+***2.MIPS exercise***  
+
+1. Create a program that adds any two given numbers provided by the user  
+
+```assembly
+   .data
+	      num1: .asciiz "\nEnter your first number: "
+	      num2: .asciiz "\nEnter your second number: "
+	      sum: .asciiz "\nThe sum of the numbers entered is: " 
+	      subs: .asciiz "\nThe remainder of the numbers entered is: "
+	      multi: .asciiz "\nThe multiplication of the entered numbers is: "
+	      divs: .asciiz "\nThe division of the entered numbers is: "
+	      thanks: .asciiz "\nThanks for testing my code :) "
+  .text
+	      main:
+              li $v0, 4
+              la $a0, num1
+              syscall
+
+              li $v0, 5
+              syscall
+
+              move $t0, $v0
+
+              li $v0, 4
+              la $a0, num2
+              syscall
+
+              li $v0, 5
+              syscall
+
+              move $t1, $v0
+              
+              add $t2, $t0, $t1
+              
+              li $v0, 4
+              la $a0, sum
+              syscall
+              
+              li $v0, 1
+              move $a0, $t2
+              syscall                         
+              
+              sub $t3, $t0, $t1
+              
+              li $v0, 4
+              la $a0, subs
+              syscall
+              
+              li $v0, 1
+              move $a0, $t3
+              syscall
+              
+              mul $t4, $t0, $t1
+              
+              li $v0, 4
+              la $a0, multi
+              syscall
+              
+              li $v0, 1
+              move $a0, $t4
+              syscall
+              
+              div $t5, $t0, $t1
+              
+              li $v0, 4
+              la $a0, divs
+              syscall
+              
+              li $v0, 1
+              move $a0, $t5
+              syscall
+              
+              li $v0, 4
+              la $a0, thanks
+              syscall
+
+
+```
+
+2. Create a program that adds any two given numbers provided by the user  
+
+```assembly
+   .data
+        message: .asciiz "\nHello, my name is Leonardo\n"
+  .text
+        main:
+              li $v0, 4
+              la $a0, message
+              syscall
+
+```
+
 </details>
 
 
