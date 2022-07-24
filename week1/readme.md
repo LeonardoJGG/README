@@ -231,7 +231,7 @@ if ((cond = true)) {
   console.log('The cond variable is false');
 }
 ```
-The error in this code was inside the condition (*if ((cond = true))*) so one solution was to simply fix it by adding the remaining equals symbol (*if ((cond == true)*):
+The error in this code was inside the condition (***if ((cond = true))***) so one solution was to simply fix it by adding the remaining equals symbol (***if ((cond == true)***):
 
 ```javascript
 var cond = false;
