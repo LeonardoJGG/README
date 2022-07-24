@@ -177,5 +177,103 @@ This process gives us as a result that my year of birth in binary numbers is: **
 
 <details>
 <summary> Thursday </summary>  
+
+***1.Print special numbers exercise***  
+
+In this exercise to print all the even numbers from 0 to 100 I have done it using the ***for***, ***while*** and ***do while*** cycle as follows:
+
+### *for*
+
+```javascript
+let numbers = '';
+
+for (i = 0; i <= 100; i++) {
+  if (i % 2 == 0) 
+  numbers = numbers + i + ' ';
+}
+console.log(numbers);
+```  
+
+### *while*
+
+```javascript
+let num = 0;
+
+while (num <= 100){
+  if(num % 2 == 0)
+  console.log(num);
+  num++; 
   
+}
+```  
+
+### *do while*
+
+```javascript
+let num = 0;
+do {
+  if(num % 2 == 0)   
+    console.log(num);
+    num++
+}while(num <= 100);
+```
+
+***2.Bad Code exercise***
+
+In the following code there is an error with the conditional:  
+
+```javascript
+var cond = false;
+
+if ((cond = true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+```
+The error in this code was inside the condition (*if ((cond = true))*) so one solution was to simply fix it by adding the remaining equals symbol (*if ((cond == true)*):
+
+```javascript
+var cond = false;
+
+if ((cond == true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+```
+
+***3.Bad Code 2 exercise***  
+
+This code had a problem, and it was that it could not fulfill the intention of the program, and it could not mount if the given number was less than 1000, a multiple of 10 or if it was different from the given number (*100*)
+
+```javascript
+var n = 100;
+
+if (n == 100) {
+  console.log('This is a special number!');
+}
+if (n < 1000) {
+  console.log('');
+} else {
+  console.log('Just a regular number');
+}
+if (n % 10 == 0) {
+  console.log('This number is multiple of 10');
+}
+```
+
+So I solved it as follows:
+
+```javascript
+var n = 100;
+
+if (n == 100) {
+  console.log('This is a special number!');
+} else if (n < 1000 && n % 10 == 0){
+  console.log('This is almost special number!');
+} else {
+  console.log('Just a regular number');
+}
+```
 </details>
