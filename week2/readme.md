@@ -127,6 +127,22 @@ The previous code was missing to return the operation, so the fastest solution I
   
 **2. ASCII Total exercise**
 
+In this exercise we are given a text string that we would have to return as an int and be able to handle ASCII characters.
+
+The proposed solution is the following:
+
+```javascript
+function uniTotal(texto) {
+  let longitud = texto.length
+  let resultado = 0;
+  
+  for (let i = 0; i < longitud; i++) {
+    resultado = resultado + texto.charCodeAt(i);
+  }
+  return resultado;
+}
+```
+
 </details>
 
 
@@ -134,7 +150,66 @@ The previous code was missing to return the operation, so the fastest solution I
 <details>
  
 <summary> Wednesday </summary>  
+
+**1. Char From ASCII Value exercise**
+For this exercise we must create a class that converts the value into a string corresponding to its ASCII value.
+
+The proposed solution is the following:
+
+```javascript
+function getChar(num){
+  return String.fromCharCode(num);
+}
+```
+
+**2. Binary Addition exercise**
+
+For this exercise we must create a function that takes two values and returns the sum of the two in binary
+
+The proposed solution is the following:
+
+```javascript
+function addBinary(a, b) {
+  let result = a + b;
+  return (result).toString(2);
+}
+```
+
+**3. Student's Final Grade exercise**
+
+In this exercise we must create a function to calculate the final grade of the students
+
+This function should return a number (final grade). There are four types of final grades:
+
+- 100, if the exam score is greater than 90 or if the number of completed projects is greater than 10.
+
+- 90, if the exam score is greater than 75 and if the number of completed projects is at least 5.
+
+- 75, if the exam score is greater than 50 and if the number of projects completed is at least 2.
+
+- 0, in other cases
+
+The proposed solution is the following:
+
+```javascript
+function finalGrade (exam, projects) {
   
+  let final_result;
+
+  if (exam > 100 || projects > 10 ){
+    final_result = 100;
+  } else if (exam > 75 && projects >= 5){
+    final_result = 90;
+  } else if (exam > 50 && projects >= 2){
+    final_result = 75;
+  } else {
+    final_result = 0;
+  }
+  
+  return final_result;
+}
+```
+
 </details>
 
 <details>
