@@ -222,7 +222,7 @@ For this exercise we must create a function to remove the exclamation marks at t
 
 The proposed solution is the following:
   
-
+```javascript
 function remove(string) {
   let result = '';
   let lastChar = string.length - 1;
