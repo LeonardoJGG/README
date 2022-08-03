@@ -301,9 +301,3 @@ function persistence(num) {
 ```
 
 </details>
-
-<details>
-  
-<summary> Friday </summary>
-  
-</details>
