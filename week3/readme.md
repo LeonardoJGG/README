@@ -26,16 +26,7 @@ function likes(names) {
   return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
 }
 ```
-  
-</details>
 
-
-
-
-<details>
-  
-<summary> Tuesday </summary>
-  
 **2. Bit Counting exercise**
   
 Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
@@ -52,6 +43,16 @@ Write a function that takes an integer as input, and returns the number of bits 
   return bit
 };
 ```
+  
+</details>
+
+
+
+
+<details>
+  
+<summary> Tuesday </summary>
+  
 </details>
 
 
