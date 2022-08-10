@@ -234,6 +234,50 @@ function uniqueInOrder(iterable) {
 
 **1. Fold An Array exercise**
 
+In this kata you have to write a method that folds a given array of integers by the middle x-times.
 
-  
+The solution could be the following:
+
+```javascript
+function foldArray(array, runs) {
+  if (array.length === 1) return array;
+  let output = [...array];
+  let aheadPosition = 0;
+  while (runs) {
+    if (output.length === 1) return output;
+    output = Array.from(
+      { length: Math.round(output.length / 2) },
+      (v) => 0
+    ).map((v, i) => {
+      aheadPosition = output.length - (i + 1);
+      if (aheadPosition === i) return output[i];
+      return output[i] + output[aheadPosition];
+    });
+    runs--;
+  }
+  return output;
+}
+```
+
+**2. Encrypt This! exercise**
+
+In this case we must create a function to encrypt messages by converting the first letter of the string into ascii code and exchanging the second for the last
+
+The solution could be the following:
+
+```javascript
+function encryptedWord(word) {
+  if (word.length == 1) return word.charCodeAt();
+  if (word.length == 2) return `${word.charCodeAt(0)}${word[1]}`;
+  return `${word.charCodeAt(0)}${word[word.length - 1]}${word.slice(
+    2,
+    word.length - 1
+  )}${word[1]}`;
+}
+
+var encryptThis = function (text) {
+  return text.split(' ').map(encryptedWord).join(' ');
+};
+```
+
 </details>
