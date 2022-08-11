@@ -280,4 +280,20 @@ var encryptThis = function (text) {
 };
 ```
 
+**3. Core Challenge**
+
+***Let’s write our Mission Statement!*** In ***one paragraph***, please answer to the next 5 questions:
+
+**1. Who are you?**
+
+**2. What background do you have?**
+
+**3. Who do you want to be?**
+
+**4. What do you want to do?**
+
+**5. What are the core values and principles that govern your character and contributions?**
+
+I'm Leonardo, future software developer. I have followed the world of development for 9 years and I was in a company as a python developer. I want to build a solid career as a ***developer*** and ***entrepreneur.*** I am a very ***constant*** person who does not stop until I meet my goals, ***curious*** and ***eager to grow***.
+
 </details>
