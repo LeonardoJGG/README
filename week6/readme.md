@@ -287,3 +287,24 @@ export class G964 {
 }
 ```
 </details>
+
+  
+  
+  
+  
+  
+  
+<details>
+  
+<summary>Thursday</summary>
+  
+**1. Tile exercise using** *Typescript*
+
+
+
+```typescript
+
+```
+
+  
+</details>
