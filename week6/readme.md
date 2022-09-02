@@ -336,23 +336,23 @@ main.start();
 ***Solution***
 
 ```typescript
-export default class Tile{
-    letter: string;
-    value: number;
+export default class Tile {
+  letter: string;
+  value: number;
 
-    constructor(letter: string, value:number){
-        this.letter = letter;
-        this.value = value;
-    }
+  constructor(letter: string, value: number) {
+    this.letter = letter;
+    this.value = value;
+  }
 
 
-    printTile() {
-        console.log(`
-            ==========================  ========================= 
-              Letter: ${this.letter}  ||  Value: ${this.value}   
-            ==========================  =========================
-        `)
-}
+  printTile() {
+    console.log(`
+            ==========================
+              Letter: ${letter}  |  Value: ${value}   
+            ==========================
+    `)
+  }
 
 }
 ```
