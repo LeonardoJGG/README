@@ -5,25 +5,35 @@
 
 **OOP glossary**
 
-1. Abstraction
+**1. Abstraction**
 
-2. Inheritance
 
-3. Polymorphism
+**2. Inheritance**
 
-4. Encapsulation
 
-5. Class
+**3. Polymorphism**
 
-6. Object
 
-7. Instance
+**4. Encapsulation**
 
-8. Interface
 
-9. Access Modifiers
+**5. Class**
 
-10. Constructors
+
+**6. Object**
+
+
+**7. Instance**
+
+
+**8. Interface**
+
+
+**9. Access Modifiers**
+
+
+**10. Constructors**
+
 
 </details>
 
