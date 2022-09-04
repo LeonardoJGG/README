@@ -52,8 +52,52 @@ console.log(myCar.features());
 
 **2. Access Modifiers**
 
+The access modifiers at the time of developing an object, allow us to determine who can or cannot access certain characteristics of our object.
+
+These are:
+
+* **default (when we don't assign any access modifier)**  
+When we do not determine any modifier, the default access level remains, which allows access from all classes within the same package.
+  
+* **public**  
+The public modifier indicates that it can be accessed from any class regardless of whether it is inside its package or not.
+  
+* **private**  
+The protected modifier specifies that it can only be accessed by methods of classes that are within their own package or independent subclasses of the package to which they belong.
+  
+* **protected***  
+The private modifier, indicates that it can only be accessed from elements that are in its own class
+
+***Example***
+
+```typescript
+class Employee {
+    public name: string;
+    public lastName: string;
+    protected age: number;
+    protected class: string;
+    private salary: number;
+}
+```
+
 
 **3. Class**
+
+In programming, a class is a template with certain properties or specific characteristics, which can be used infinitely to create different objects by inheriting the properties of said template.
+
+***Example***
+
+```typescript
+class TemplateCar{
+    make: string;
+    model: string;
+    year: number;
+    color: string;
+    weight: number;
+    max_speed: number;
+    horsepower: number;
+}
+```
 
 
 **4. Constructors**
