@@ -7,20 +7,62 @@
 
 **1. Abstraction**
 
+Abstraction is the concept of programming in which it should not be necessary to know the internal workings of an object in order to make an application of it, and that we can modify the implementation.
 
-**2. Inheritance**
+As an example we can create an object for automobiles, to which we assign properties that are shown as: 
+
+    Make, model, year and color
+
+Without the need to have knowledge about other properties such as its
+  
+    weight, max_speed or horsepower
+
+***Example***
+
+```typescript
+class Car {
+  make: string;
+  model: string;
+  year: number;
+  color: string;
+  weight: number;
+  max_speed: number;
+  horsepower: number;
+
+  constructor(make: string, model: string, year: number, color: string, weight: number, max_speed: number, horsepower: number){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+    this.weight = weight;
+    this.max_speed = max_speed;
+    this.horsepower = horsepower;
+  }
+
+  features(){
+    return `${this.make}, ${this.model}, ${this.year}`
+  }
+
+}
+
+var myCar = new Car('Ford', 'GT', 2022, 'Grey', 1460, 350, 669);
+console.log(myCar.features());
+```
 
 
-**3. Polymorphism**
+**2. Access Modifiers**
 
 
-**4. Encapsulation**
+**3. Class**
 
 
-**5. Class**
+**4. Constructors**
 
 
-**6. Object**
+**5. Encapsulation**
+
+
+**6. Inheritance**
 
 
 **7. Instance**
@@ -29,10 +71,10 @@
 **8. Interface**
 
 
-**9. Access Modifiers**
+**9. Object**
 
 
-**10. Constructors**
+**10. Polymorphism**
 
 
 </details>
