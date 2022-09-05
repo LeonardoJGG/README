@@ -168,6 +168,40 @@ With these examples we were able to understand a little better how the encapsula
 
 **6. Inheritance**
 
+Inheritance in programming is to transmit the code of the parent class to the child class, and in this way reuse the code without the need to override the properties for each class.
+
+That means that all the properties of the parent class will be included within its children automatically, in addition to being able to assign exclusive properties for each child class if you wish.
+
+***Example***
+
+```typescript
+class Dad{
+  name: string;
+  lastname: string;
+  age: number;
+  gender: string;
+
+  constructor(name: string, lastname: string, age: number, gender: string){
+    this.name = name;
+    this.lastname = lastname;
+    this.age = age;
+    this.gender = gender;
+  }
+}
+
+class Son extends Dad{
+  height: number;
+  weight: number;
+
+  constructor(name: string, lastname: string, age: number, gender: string, height: number, weight: number){
+  super(name, lastname, age, gender);
+  this.height = height;
+  this.weight = weight;
+
+  }
+}
+```
+
 
 **7. Instance**
 
