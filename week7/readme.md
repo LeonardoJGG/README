@@ -45,7 +45,7 @@ class Car {
 
 }
 
-var myCar = new Car('Ford', 'GT', 2022, 'Grey', 1460, 350, 669);
+const myCar = new Car('Ford', 'GT', 2022, 'Grey', 1460, 350, 669);
 console.log(myCar.features());
 ```
 
@@ -101,9 +101,69 @@ class TemplateCar{
 
 
 **4. Constructors**
+  
+A constructor is a subroutine or a series of instructions that is responsible for initializing an object by assigning initial values.
+
+***Example***
+
+```typescript
+class ConstructorCar {
+    make: string;
+    model: string;
+    year: number;
+    color: string;
+    weight: number;
+    max_speed: number;
+    horsepower: number;
+  
+    constructor(make: string, model: string, year: number, color: string, weight: number, max_speed: number, horsepower: number){
+      this.make = make;
+      this.model = model;
+      this.year = year;
+      this.color = color;
+      this.weight = weight;
+      this.max_speed = max_speed;
+      this.horsepower = horsepower;
+    }
+}
+```
 
 
 **5. Encapsulation**
+  
+Encapsulation is to hide information of an object that does not contribute to its main characteristics, accompanying the abstraction, since for the abstraction to work correctly, its implementation must be encapsulated
+  
+***Example No. 1***
+
+    We need anyone to be able to access the color of a car, how should I declare the color of the car?
+  
+```typescript
+class color{
+    public color: string;
+}
+```
+
+***Example No. 2***
+  
+    We need that the color can also be accessed from other types of vehicles, how should I declare the color of the car?
+
+```typescript
+class color{
+    protected color: string;
+}
+```
+
+***Example No. 3***
+
+    We need the color to be accessible only for the car, how should I declare the color of the car?
+
+```typescript
+class color{
+    private color: string;
+}
+```
+
+With these examples we were able to understand a little better how the encapsulation of an object works
 
 
 **6. Inheritance**
