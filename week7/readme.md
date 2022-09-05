@@ -204,16 +204,179 @@ class Son extends Dad{
 
 
 **7. Instance**
+  
+An instance is any object that is derived from another, so all objects are instances, except the Object class, since it is the parent class of all
 
+***Example***
+
+```typescript
+class Person{
+  name: string;
+  lastname: string;
+  age: number;
+  gender: string;
+
+  constructor(name: string, lastname: string, age: number, gender: string){
+    this.name = name;
+    this.lastname = lastname;
+    this.age = age;
+    this.gender = gender;
+  }
+
+  print(){
+  return `Hello ${this.name} ${this.lastname}!`
+}
+}
+
+const person1: Person = new Person('Leonardo', 'Guevara', 19, 'male'); //Instance
+const person2: Person = new Person('Elon', 'Musk', 51, 'male'); //Instance
+const person3: Person = new Person('Bill', 'Gates', 66, 'male'); //Instance
+```
 
 **8. Interface**
+
+Interfaces in object-oriented programming work as a kind of contract, where you specify which methods a class must necessarily implement so that it can be executed.
+
+All methods within an interface must be public.
+
+***Example***
+
+It gives us an error because we are not fulfilling the contract of the properties that our interface is demanding
+
+```typescript
+interface Person {
+  name: string;
+  age: number;
+  gender: string;
+}
+
+const person: Person[] = [
+  {
+    name: 'Leonardo Guevara',
+    age: 19,
+    gender: 'male'
+  },
+  {
+    name: 'Elon Musk',
+    age: 51,
+    gender: 'male'
+  },
+  {
+    name: 'Bill Gates',
+    age: 66   
+                          //ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR
+
+  }
+  ]
+```
+  
+Here it is fine because we are respecting the contract
+
+  
+```typescript
+interface Person {
+  name: string;
+  age: number;
+  gender: string;
+}
+
+const person: Person[] = [
+  {
+    name: 'Leonardo Guevara',
+    age: 19,
+    gender: 'male'
+  },
+  {
+    name: 'Elon Musk',
+    age: 51,
+    gender: 'male'
+  },
+  {
+    name: 'Bill Gates',
+    age: 66,  
+    gender: 'male',        //That's ok
+  }
+  ]
+```
+
 
 
 **9. Object**
 
+An object in programming is a block that contains data stored within itself, which are known as *attributes* and *methods*, intended to fulfill a specific task or behavior.
+
+***Example***
+
+```typescript
+class ObjectCar{
+  make: string;
+  model: string;
+  year: number;                // ------------ ATRIBUTES ------------
+  color: string;
+  max_speed: number;
+
+  
+  start(){
+
+  }
+
+  speedUp(){                    
+                              // ------------ METHODS ------------
+  }
+
+  curb(){
+
+  }
+
+}
+```
+
 
 **10. Polymorphism**
+  
+Polymorphism in programming means that any object could have different shapes or different behavior using the same methods just with different parameters.
 
+***Example***
+
+```typescript
+function person(height: number, weight: number){
+  return {
+    description(){
+      console.log(`Person height is ${height} and weight is ${weight}`)
+    }
+  }
+} 
+
+function wall(height: number, width: number, thickness: number){
+  return {
+    description(){
+      console.log(`Wall height is ${height}, width is ${width} and thickness is ${thickness}`)
+    }
+  }
+} 
+
+function mirror(height: number, width: number, price: number){
+  return {
+    description(){
+      console.log(`Mirror height is ${height}, width is ${width} and price id ${price}`)
+    }
+  }
+} 
+
+function printDescription(obj: any){
+  if (typeof obj.description === 'function'){     // --------- COMMON METHOD ---------
+    obj.description();
+  }
+}
+
+const person1 = person(175, 60);
+const wall1 = wall(200, 150, 50);
+const mirror1 = mirror(145, 50, 70);
+
+printDescription(person1)
+printDescription(wall1)                   // --------- POLIMORPHISM ---------
+printDescription(mirror1)
+```
 
 </details>
 
