@@ -41,25 +41,70 @@ The difference between nodejs and any other browser is that NodeJS has full acce
   
 ***1. What is a Javascript Module?***
   
-  
+  Modules are a feature that can contain classes or libraries with functions for specific tasks, which we can import into our projects.
   
   
 ***2. Why are Javascript Modules necessary?***
   
-  
+  Modules are important because they allow us to split our code into different files by importing and exporting them, thus allowing us to reuse them.
   
   
 ***3. What module standards are available in Node.JS?***
   
-  
+As standard modules NodeJs has the following modules:
+
+- http
+- url
+- querystring
+- path
+- fs
+- util
   
   
 ***4. What are the differences between ESModules and CommonJS modules?***
   
-  
+  The difference between ESModules and CommonJS is that CommonJS specifically allows you to load modules in a synchronous way, while ESModules allows you to load modules synchronously and asynchronously.
   
   
 ***5. Which types of modules exist in Node.JS?***
+  
+  In NodeJS there are three types of modules:
+  
+- Core Modules
+- Local Modules
+- Third Party Modules
+  
+  
+## Node.JS Module System Practice 💻
+  
+  
+  
+## Client-Server Model Learning Exercise 🧠
+  
+***1. What is a Server?***
+  
+A server is a set of computers that can receive requests from users and return a response.
+
+ 
+***2. Why is a Client?***
+  
+The client is the one who interacts with the server and sends requests and receives responses from it.
+
+  
+***3. Is a server just another physical computer?***
+  
+  A server is a physical computer integrated into a network in which it communicates with other computers also connected to the network.
+
+ 
+***4. Is there any similarity between human communication and the client-server model?***
+  
+  In general, the intention of both options is to make a request and receive a response, but in my opinion the difference between the two is that in human communication, people communicate directly with a single person to receive some type of information, while in client-server model, many clients are communicating at the same time with a single server which returns a specific response to each request from each client
+
+  
+***5. Is the client-server model applicable only to the Web?***
+
+According to me, currently I think it is only applicable for the web, since it is necessary to establish a connection between clients and the server, and for that the network is necessary, which is within the web
+
   
 </details>
 
