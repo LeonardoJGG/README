@@ -9,6 +9,8 @@
 
 <details>
   <summary>Tuesday</summary>
+ 
+## Node.JS Core Understanding Learning Exercise 🧠
   
 ***1. What is Node.js?***
 
@@ -33,6 +35,31 @@ The difference between nodejs and any other browser is that NodeJS has full acce
   ***6. What is NVM and Why is it useful for Node.JS developers?***
   
   NVM (node vision manager) is a bash script used to manage the released versions of NodeJS, allowing you to install, update or change the version. This makes it easier to work with projects that require different versions on the same computer.
+  
+  
+## Node.JS Module System Core Understanding Learning Exercise 🧠
+  
+***1. What is a Javascript Module?***
+  
+  
+  
+  
+***2. Why are Javascript Modules necessary?***
+  
+  
+  
+  
+***3. What module standards are available in Node.JS?***
+  
+  
+  
+  
+***4. What are the differences between ESModules and CommonJS modules?***
+  
+  
+  
+  
+***5. Which types of modules exist in Node.JS?***
   
 </details>
 
