@@ -77,6 +77,56 @@ As standard modules NodeJs has the following modules:
   
 ## Node.JS Module System Practice 💻
   
+### Description
+
+Time to put into practice what you learned about Node.JS modules 😁.
+
+1. Create a new Node.JS project, name it: <your-nickname>/modules
+2. Create a new module, name it: operations.js
+3. Inside operations.js implement two functions, one for the sum operation and one for the subtract operation.
+4. Create a new module, name it: main.js
+5. Import the functions implemented in operations.js and use them in any way in main.js.
+
+***Solution***
+
+**main.js**
+
+```javascript
+
+const {sum, subs} = require('./operations.js');
+
+let One = 3.5;
+let Two = 3.5;
+
+let Operation1 = sum(One, Two);
+let Operation2 = subs(One, Two);
+let Complete_operation = sum(Operation1, Operation2);
+let Complete_operation1 = subs(Operation1, Operation2);
+
+console.log('The result is:' + Operation1);
+console.log('The result is:' + Operation2);
+console.log('The result is:' + Complete_operation);
+console.log('The result is:' + Complete_operation1);
+
+```
+
+**operations.js**
+
+```javascript
+
+function sum(num1, num2){
+    let result = num1 + num2;
+    return result;
+}
+
+function subs(num1, num2){
+    let result = num1 - num2;
+    return result;
+}
+
+module.exports = {sum, subs}
+
+```
   
   
 ## Client-Server Model Learning Exercise 🧠
