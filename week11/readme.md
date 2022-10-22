@@ -300,4 +300,58 @@ Yes, there are alternatives to postman, among them Zapier, SoapUI among others
 <details>
   <summary>Thursday</summary>
 
+## Forrest Gump Ping-Pong API 🏓:
+
+### Step #1
+
+```javascript
+  npm init
+```
+
+### Step #2
+
+```javascript
+  npm install express --save
+```
+### Step #3
+
+```javascript
+  npm install cors
+```
+
+### Step #4 (coding)
+
+```javascript
+  const express = require('express');
+  const cors = require('cors');
+  const game = express();
+  const port = 3000;
+
+  game.use(cors())
+
+  game.get('/api/buba-gump', (req, res) => {
+      res.send({message: 'This is my API REST for ping-pong with Express'})
+  })
+
+  game.post('/api/buba-gump/ping', (req, res) => {
+      res.send({data: 'pong'})
+  })
+
+  game.post('/api/buba-gump/pong', (req, res) => {
+      res.send({data: 'ping'})
+  })
+
+  game.listen(port, () => {
+      console.log(`Running on port ${port}`)
+  })
+```
+
+### RUN
+  
+```javascript
+  node index.js
+```
+
+## Delayed Response API ⏳:
+
 </details
