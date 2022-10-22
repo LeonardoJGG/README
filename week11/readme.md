@@ -202,12 +202,95 @@ It is a program that creates a connection between applications
 
 
 ## From JSON to REST Learning Exercise 🧠
+  
+***1. What is HTTP?***
+
+The http protocol (hipetext transfer protocol) is the protocol that allows the transfer of information through files on the world wide web
+
+***2. What is JSON?***
+
+The JSON format is a data exchange format based on literal notation subsets of JavaScript objects.
+
+***3. What is REST?***
+
+REST is a **software architecture** style for distributed hypermedia systems such as the world wide web.
+
+***4. What is a Resource in REST?***
+
+A resource is anything important enough to be referenced by itself, a resource can be stored in a computer represented as a sequence of bits.
+
+Following this is the resource identifier, or uniform resource identifier (URL) is a string of characters that uniquely identifies the resources or address of a network.
+
+
+***5. What is an HTTP method?***
+
+HTTP methods provide the operations available on Rule Execution Server artifacts, such as create, read, update, and delete.
+
+  **What HTTP methods does REST use within its architecture rules?**
+  
+Uniform interface: descriptive messages
+
+Use the features of the http protocol to improve semantics:
+
+* HTTP Verbs
+
+* HTTP Status Codes
+
+* HTTP Authentication
+
+Seek a simple and hierarchical API with certain rules: Use of plural names
+
+
+***6. Is REST the same as HTTP?***
+
+REST and HTTP are not the same as http is the hypertext transfer protocol for transferring files on the web and REST connects systems based on this http protocol
 
 
 ## REST API Clients Learning Exercise 🧠
 
+***1. Postman only works with REST APIs?***
+
+Postman is dedicated to working with web APIs, which conform to the REST architecture that allows interaction with RESTful web services.
+
+***2. Is there an alternative to Postman?***
+
+Yes, there are alternatives to postman, among them Zapier, SoapUI among others
+
 
 ## Express.JS Core Understanding Learning Exercise 🧠
+  
+***Create "Hello world!" with express***
+  
+* Step #1
+  
+  ```javascript
+    npm init
+  ```
+
+* Step #2
+  
+  ```javascript
+    npm install express --save 
+  ```
+
+* Step #3 (Coding)
+  
+  ```javascript
+    const express = require ('express');
+    const app = express();
+    const port = 3000;
+
+    app.get('/', (req, res) => {
+        res.send('Hello World!');
+    })
+
+    app.listen(port, () => {
+        console.log(`Hello world app is running on port ${port}`)
+    })
+  ```
+
+**check the output of our program at** *http://localhost:3000/*
+
 
 </details>
 
