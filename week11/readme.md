@@ -302,6 +302,33 @@ Yes, there are alternatives to postman, among them Zapier, SoapUI among others
 
 ## Forrest Gump Ping-Pong API 🏓:
 
+### API Requeriments:
+
+* Use Express JS to build the API.
+
+* Use any port you want for the API.
+
+* The API has to be able to respond to the "ping" request with the "pong" message.
+
+* Use /api/buba-gump as the root route for the API.
+
+* Make sure your API responds to the request using JSON e.g.:
+
+```javascript
+  {
+    "message": "pong"
+  }
+```
+
+* Use Postman to test your API.
+
+* Optional but desirable, make your API capable of responding to any player move:
+
+1. If the user makes the "ping" move, your API should respond with "pong".
+2. If the user makes the "pong" move, your API should respond with "ping".
+
+### Solution
+
 ### Step #1
 
 ```javascript
@@ -353,5 +380,69 @@ Yes, there are alternatives to postman, among them Zapier, SoapUI among others
 ```
 
 ## Delayed Response API ⏳:
+
+### API Requeriments:
+  
+* Use Express JS to build the API.
+
+* Use any port you want for the API.
+
+* The API should use route parameters to get the desired delay:
+
+```javascript
+  # Request example
+  # Here 3000 indicates a delay of 3000 milliseconds
+  http://localhost:3000/api/delay/3000
+```
+
+* Your API should have just one request handler.
+
+* You can send any response you want after the delay has expired.
+
+* If no delay is provided in the request, the API should use 1000 as default.
+
+###Solution
+
+### Step #1
+
+```javascript
+  npm init
+```
+
+### Step #2
+
+```javascript
+  npm install express --save
+```
+
+### Step #3 (coding)
+
+```javascript
+  const express = require('express');
+  const app = express();
+  const port = 3000;
+
+  app.get('/api/delay/3000' + ':id', (req, res) => {
+      let seconds = 3000;
+
+      if (Number.isInteger(seconds)) {
+          setTimeout(() => { res.send(`response after ${seconds} ms`) }, seconds)
+      }
+  })
+
+  app.get('/api/delay/3000', (req, res) => {
+      setTimeout(() => { res.send(`response default after 1000 ms`) }, 1000);
+  })
+
+  app.listen(port, () => {
+      console.log(`RUNNING ON PORT ${port}`)
+  })
+```
+
+### RUN
+  
+```javascript
+  node index.js
+```
 
 </details
