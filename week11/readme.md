@@ -163,6 +163,47 @@ According to me, currently I think it is only applicable for the web, since it i
 
 <details>
   <summary>Wednesday</summary>
+  
+## APIs Core Understanding Learning Exercise 🧠
+
+***1. What is an API?***
+
+An API (Application Programming Interfaces) is a set of protocols and definitions used to develop and integrate software, allowing communication between two applications through certain rules.
+
+***2. What is a Protocol?***
+
+Protocols are a set of rules, standards and policies made up of restrictions that define the exchange of information between devices or servers through the network.
+
+***3. Is the term API only applicable to the communication of programs over the Internet?***
+
+Yes, it is only applicable on the internet, since for an api to work it must have a connection with another application through some network
+
+***4. Why is structured communication between two programs important?***
+  
+Structured communication is important so that each program can work objectively, respecting the operation of the application with which it is making a connection, which only happens in applications since in communication between humans there are no protocols that create restrictions between the communication of two people.
+
+
+***5. Is an API just another program or a standard? ***
+  
+It is a program that creates a connection between applications
+
+***6. Do you know any API? Can you list at least 5 examples of APIs?***
+
+1- Axios
+2- Google Cloud API
+3- Twitter API
+4- API OpenWeatherMap
+5- All Sports API
+  
+
+
+## From JSON to REST Learning Exercise 🧠
+
+
+## REST API Clients Learning Exercise 🧠
+
+
+## Express.JS Core Understanding Learning Exercise 🧠
 
 </details>
 
