@@ -119,6 +119,28 @@ api.listen(port, () => {
 
 **Check the output of our program at** *http://localhost:3000/api/age/?name=your_name*
 
+## NSA Secrets Box API - Hacking Challenge 👨‍💻
+
+###Setup Instructions
+
+* Clone the API code repository  
+* Install all project dependencies  
+* Start the application with: *npm run start*   
+* Start hacking :^)  
+
+### API Test Instructions
+
+* You should use Postman to test the API
+* Your request should look like this one:
+
+![image](https://user-images.githubusercontent.com/108515102/197702122-dc48e33f-5886-45e1-9e5d-0eea33cc43de.png)
+
+	
+***SOLUTION***
+
+In this exercise I managed to access the data by using coercion to evade role validation to access
+
+
 </details>
 
 
